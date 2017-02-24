@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable final class RoundedBorderButton: RoundedButton {
 
-    @IBInspectable var borderColor: UIColor = .tagmatchMain {
+    @IBInspectable var borderColor: UIColor = .black {
         didSet {
             setColor(borderColor)
         }

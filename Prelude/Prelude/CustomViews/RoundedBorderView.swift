@@ -28,7 +28,6 @@ import UIKit
     private func commonInit() {
         cornerRadius = 2.0
         layer.borderWidth = 1.0
-        layer.borderColor = UIColor.tagmatchMain.cgColor
     }
 
 }
