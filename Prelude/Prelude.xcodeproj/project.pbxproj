@@ -20,7 +20,7 @@
 		E3154EB31E60487300EBD4B0 /* ContainerViewShowing.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EB01E60487300EBD4B0 /* ContainerViewShowing.swift */; };
 		E3154EB41E60487300EBD4B0 /* KeyboardNotificationReceiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EB11E60487300EBD4B0 /* KeyboardNotificationReceiving.swift */; };
 		E3154EB51E60487300EBD4B0 /* XibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EB21E60487300EBD4B0 /* XibInstantiatable.swift */; };
-		E3154EB91E6048C000EBD4B0 /* TagmatchInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EB71E6048C000EBD4B0 /* TagmatchInputValidator.swift */; };
+		E3154EB91E6048C000EBD4B0 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EB71E6048C000EBD4B0 /* InputValidator.swift */; };
 		E3154EBA1E6048C000EBD4B0 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EB81E6048C000EBD4B0 /* UserDefaultsManager.swift */; };
 		E3154EC31E6048EF00EBD4B0 /* CollectionViewFlowLayoutLeftAlign.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EBC1E6048EF00EBD4B0 /* CollectionViewFlowLayoutLeftAlign.swift */; };
 		E3154EC41E6048EF00EBD4B0 /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EBD1E6048EF00EBD4B0 /* RoundedBorderButton.swift */; };
@@ -58,7 +58,7 @@
 		E3154EB01E60487300EBD4B0 /* ContainerViewShowing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewShowing.swift; sourceTree = "<group>"; };
 		E3154EB11E60487300EBD4B0 /* KeyboardNotificationReceiving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationReceiving.swift; sourceTree = "<group>"; };
 		E3154EB21E60487300EBD4B0 /* XibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibInstantiatable.swift; sourceTree = "<group>"; };
-		E3154EB71E6048C000EBD4B0 /* TagmatchInputValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagmatchInputValidator.swift; sourceTree = "<group>"; };
+		E3154EB71E6048C000EBD4B0 /* InputValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
 		E3154EB81E6048C000EBD4B0 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		E3154EBC1E6048EF00EBD4B0 /* CollectionViewFlowLayoutLeftAlign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewFlowLayoutLeftAlign.swift; path = CustomViews/CollectionViewFlowLayoutLeftAlign.swift; sourceTree = "<group>"; };
 		E3154EBD1E6048EF00EBD4B0 /* RoundedBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedBorderButton.swift; path = CustomViews/RoundedBorderButton.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		E3154EB61E60489900EBD4B0 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				E3154EB71E6048C000EBD4B0 /* TagmatchInputValidator.swift */,
+				E3154EB71E6048C000EBD4B0 /* InputValidator.swift */,
 				E3154EB81E6048C000EBD4B0 /* UserDefaultsManager.swift */,
 			);
 			path = Utilities;
@@ -290,7 +290,7 @@
 				E3154EAC1E60485800EBD4B0 /* UITableView+Scroll.swift in Sources */,
 				E3154EAD1E60485800EBD4B0 /* UITableView+Type.swift in Sources */,
 				E3154EBA1E6048C000EBD4B0 /* UserDefaultsManager.swift in Sources */,
-				E3154EB91E6048C000EBD4B0 /* TagmatchInputValidator.swift in Sources */,
+				E3154EB91E6048C000EBD4B0 /* InputValidator.swift in Sources */,
 				E3154EB31E60487300EBD4B0 /* ContainerViewShowing.swift in Sources */,
 				E3154EA81E60485800EBD4B0 /* NSMutableAttributedStringExtension.swift in Sources */,
 				E3154EC71E6048EF00EBD4B0 /* RoundedFilledButton.swift in Sources */,
@@ -508,6 +508,7 @@
 				E3154E781E603C4800EBD4B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3154E791E603C4800EBD4B0 /* Build configuration list for PBXNativeTarget "PreludeTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +517,7 @@
 				E3154E7B1E603C4800EBD4B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

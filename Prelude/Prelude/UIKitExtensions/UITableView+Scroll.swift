@@ -1,6 +1,6 @@
 //
 //  UITableView+Scroll.swift
-//  tagmatch
+//  Prelude
 //
 //  Created by Yoshikuni Kato on 2016/10/04.
 //  Copyright © 2016年 Ohako Inc. All rights reserved.

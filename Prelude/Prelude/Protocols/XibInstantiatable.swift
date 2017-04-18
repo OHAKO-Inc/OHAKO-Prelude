@@ -1,6 +1,6 @@
 //
 //  XibInstantiatable.swift
-//  tagmatch
+//  Prelude
 //
 //  Created by Yoshikuni Kato on 2016/06/29.
 //  Copyright © 2016年 Ohako Inc. All rights reserved.

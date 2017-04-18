@@ -1,6 +1,6 @@
 //
 //  UIImage+Color.swift
-//  tagmatch
+//  Prelude
 //
 //  Created by Yoshikuni Kato on 2016/07/27.
 //  Copyright © 2016年 Ohako Inc. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIImage {
-    class func makeImage(with color: UIColor) -> UIImage? {
+    class func makeImage(of color: UIColor) -> UIImage? {
         let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
         UIGraphicsBeginImageContext(rect.size)
         guard let context = UIGraphicsGetCurrentContext() else {
