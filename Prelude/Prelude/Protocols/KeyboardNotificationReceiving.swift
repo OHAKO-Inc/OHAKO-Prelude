@@ -8,19 +8,19 @@
 
 import UIKit
 
-protocol KeyboardNotificationReceiving {
+public protocol KeyboardNotificationReceiving {
     func handleKeyboardWillShow(_ notification: Notification)
     func handleKeyboardWillHide(_ notification: Notification)
     func animationsWhenKeyboardWillMove(keyboardRect: CGRect, show: Bool)
 }
 
-extension KeyboardNotificationReceiving {
+public extension KeyboardNotificationReceiving {
 
-    func handleKeyboardWillShow(_ notification: Notification) {
+    public func handleKeyboardWillShow(_ notification: Notification) {
         keyboardWillMove(notification, show: true)
     }
 
-    func handleKeyboardWillHide(_ notification: Notification) {
+    public func handleKeyboardWillHide(_ notification: Notification) {
         keyboardWillMove(notification, show: false)
     }
 

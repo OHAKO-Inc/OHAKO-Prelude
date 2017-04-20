@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol XibInstantiatable {
+public protocol XibInstantiatable {
     func instantiate()
 }
 
-extension XibInstantiatable where Self: UIView {
+public extension XibInstantiatable where Self: UIView {
     func instantiate() {
         let nib = UINib(nibName: String(describing: type(of: self)), bundle: nil)
         guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else {

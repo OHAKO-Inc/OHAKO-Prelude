@@ -8,8 +8,8 @@
 
 import UIKit
 
-class CollectionViewFlowLayoutLeftAlign: UICollectionViewFlowLayout {
-
+public class CollectionViewFlowLayoutLeftAlign: UICollectionViewFlowLayout {
+    
     private func insetForSection(at index: Int) -> UIEdgeInsets {
         guard let collectionView = collectionView,
             let sectionInset = (collectionView.delegate as? UICollectionViewDelegateFlowLayout)?.collectionView?(collectionView, layout: self, insetForSectionAt: index) else {
@@ -26,7 +26,7 @@ class CollectionViewFlowLayoutLeftAlign: UICollectionViewFlowLayout {
         return minimumInteritemSpacing
     }
 
-    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+    public override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
 
         guard let attributes = super.layoutAttributesForItem(at: indexPath)?.copy() as? UICollectionViewLayoutAttributes,
             let collectionViewWidth = collectionView?.frame.width else {
@@ -59,7 +59,7 @@ class CollectionViewFlowLayoutLeftAlign: UICollectionViewFlowLayout {
         return attributes
     }
 
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    public override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         guard let attributes = super.layoutAttributesForElements(in: rect) else {
             return nil
         }

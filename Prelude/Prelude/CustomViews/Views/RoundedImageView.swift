@@ -8,8 +8,8 @@
 
 import UIKit
 
-@IBDesignable final class RoundedImageView: UIImageView {
-    @IBInspectable var cornerRadius: CGFloat = 0.0 {
+@IBDesignable open class RoundedImageView: UIImageView {
+    @IBInspectable open var cornerRadius: CGFloat = 0.0 {
         didSet {
             layer.cornerRadius = cornerRadius
             clipsToBounds = cornerRadius > 0.0

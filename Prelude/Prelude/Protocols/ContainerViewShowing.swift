@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol ContainerViewShowing {
+public protocol ContainerViewShowing {
     func addChildViewController(_ childViewController: UIViewController, to containerView: UIView)
 }
 
-extension ContainerViewShowing where Self: UIViewController {
-    func addChildViewController(_ childViewController: UIViewController, to containerView: UIView) {
+public extension ContainerViewShowing where Self: UIViewController {
+    public func addChildViewController(_ childViewController: UIViewController, to containerView: UIView) {
         addChildViewController(childViewController)
         containerView.addFilledSubview(childViewController.view)
         childViewController.didMove(toParentViewController: self)

@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension NSMutableAttributedString {
-    convenience init(text: String, font: UIFont, lineSpacing: CGFloat = 0.0) {
+public extension NSMutableAttributedString {
+    convenience public init(text: String, font: UIFont, lineSpacing: CGFloat = 0.0) {
         self.init(string: text)
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = lineSpacing
@@ -22,15 +22,15 @@ extension NSMutableAttributedString {
 
 }
 
-extension NSAttributedString {
-    func boundingRectForUITextView(width: CGFloat) -> CGRect {
+public extension NSAttributedString {
+    public func boundingRectForUITextView(width: CGFloat) -> CGRect {
         let options = unsafeBitCast(
             NSStringDrawingOptions.usesLineFragmentOrigin.rawValue /* | NSStringDrawingOptions.UsesFontLeading.rawValue */,
             to: NSStringDrawingOptions.self)
         return self.boundingRect(with: CGSize(width: width, height: CGFloat.greatestFiniteMagnitude), options: options, context: nil)
     }
 
-    func boundingRectForUILabel(width: CGFloat) -> CGRect {
+    public func boundingRectForUILabel(width: CGFloat) -> CGRect {
         let options = unsafeBitCast(
             NSStringDrawingOptions.usesLineFragmentOrigin.rawValue |
                 NSStringDrawingOptions.truncatesLastVisibleLine.rawValue,

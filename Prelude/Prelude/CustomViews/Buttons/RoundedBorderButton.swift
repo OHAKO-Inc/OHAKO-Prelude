@@ -8,9 +8,9 @@
 
 import UIKit
 
-@IBDesignable final class RoundedBorderButton: RoundedButton {
+@IBDesignable open class RoundedBorderButton: RoundedButton {
 
-    @IBInspectable var borderColor: UIColor = .black {
+    @IBInspectable open var borderColor: UIColor = .black {
         didSet {
             setColor(borderColor)
         }
@@ -21,12 +21,12 @@ import UIKit
         commonInit()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }
 
-    override func prepareForInterfaceBuilder() {
+    override open func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         commonInit()
     }
@@ -37,7 +37,7 @@ import UIKit
         setColor(borderColor)
     }
 
-    func setColor(_ color: UIColor) {
+    open func setColor(_ color: UIColor) {
         layer.borderColor = color.cgColor
         setTitleColor(color, for: UIControlState())
     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
 
     private func addFillConstraints(_ addedView: UIView) {
         addedView.translatesAutoresizingMaskIntoConstraints = false
@@ -18,12 +18,12 @@ extension UIView {
         trailingAnchor.constraint(equalTo: addedView.trailingAnchor).isActive = true
     }
 
-    func addFilledSubview(_ view: UIView) {
+    public func addFilledSubview(_ view: UIView) {
         addSubview(view)
         addFillConstraints(view)
     }
 
-    func insertFilledSubview(_ view: UIView, belowSubview siblingSubview: UIView) {
+    public func insertFilledSubview(_ view: UIView, belowSubview siblingSubview: UIView) {
         insertSubview(view, belowSubview: siblingSubview)
         addFillConstraints(view)
     }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E30536EC1EA8A3D100C5617E /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30536E91EA8A3D100C5617E /* RoundedBorderButton.swift */; };
+		E30536ED1EA8A3D100C5617E /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30536EA1EA8A3D100C5617E /* RoundedButton.swift */; };
+		E30536EE1EA8A3D100C5617E /* RoundedFilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30536EB1EA8A3D100C5617E /* RoundedFilledButton.swift */; };
+		E30536F21EA8A3D800C5617E /* RoundedBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30536EF1EA8A3D800C5617E /* RoundedBorderView.swift */; };
+		E30536F31EA8A3D800C5617E /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30536F01EA8A3D800C5617E /* RoundedImageView.swift */; };
+		E30536F41EA8A3D800C5617E /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30536F11EA8A3D800C5617E /* RoundedView.swift */; };
 		E3154E6C1E603C4800EBD4B0 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3154E621E603C4800EBD4B0 /* Prelude.framework */; };
 		E3154E711E603C4800EBD4B0 /* PreludeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154E701E603C4800EBD4B0 /* PreludeTests.swift */; };
 		E3154E731E603C4800EBD4B0 /* Prelude.h in Headers */ = {isa = PBXBuildFile; fileRef = E3154E651E603C4800EBD4B0 /* Prelude.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,12 +29,6 @@
 		E3154EB91E6048C000EBD4B0 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EB71E6048C000EBD4B0 /* InputValidator.swift */; };
 		E3154EBA1E6048C000EBD4B0 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EB81E6048C000EBD4B0 /* UserDefaultsManager.swift */; };
 		E3154EC31E6048EF00EBD4B0 /* CollectionViewFlowLayoutLeftAlign.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EBC1E6048EF00EBD4B0 /* CollectionViewFlowLayoutLeftAlign.swift */; };
-		E3154EC41E6048EF00EBD4B0 /* RoundedBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EBD1E6048EF00EBD4B0 /* RoundedBorderButton.swift */; };
-		E3154EC51E6048EF00EBD4B0 /* RoundedBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EBE1E6048EF00EBD4B0 /* RoundedBorderView.swift */; };
-		E3154EC61E6048EF00EBD4B0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EBF1E6048EF00EBD4B0 /* RoundedButton.swift */; };
-		E3154EC71E6048EF00EBD4B0 /* RoundedFilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EC01E6048EF00EBD4B0 /* RoundedFilledButton.swift */; };
-		E3154EC81E6048EF00EBD4B0 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EC11E6048EF00EBD4B0 /* RoundedImageView.swift */; };
-		E3154EC91E6048EF00EBD4B0 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3154EC21E6048EF00EBD4B0 /* RoundedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E30536E91EA8A3D100C5617E /* RoundedBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderButton.swift; sourceTree = "<group>"; };
+		E30536EA1EA8A3D100C5617E /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		E30536EB1EA8A3D100C5617E /* RoundedFilledButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedFilledButton.swift; sourceTree = "<group>"; };
+		E30536EF1EA8A3D800C5617E /* RoundedBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderView.swift; sourceTree = "<group>"; };
+		E30536F01EA8A3D800C5617E /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		E30536F11EA8A3D800C5617E /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		E3154E621E603C4800EBD4B0 /* Prelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3154E651E603C4800EBD4B0 /* Prelude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prelude.h; sourceTree = "<group>"; };
 		E3154E661E603C4800EBD4B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,12 +67,6 @@
 		E3154EB71E6048C000EBD4B0 /* InputValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
 		E3154EB81E6048C000EBD4B0 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		E3154EBC1E6048EF00EBD4B0 /* CollectionViewFlowLayoutLeftAlign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewFlowLayoutLeftAlign.swift; path = CustomViews/CollectionViewFlowLayoutLeftAlign.swift; sourceTree = "<group>"; };
-		E3154EBD1E6048EF00EBD4B0 /* RoundedBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedBorderButton.swift; path = CustomViews/RoundedBorderButton.swift; sourceTree = "<group>"; };
-		E3154EBE1E6048EF00EBD4B0 /* RoundedBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedBorderView.swift; path = CustomViews/RoundedBorderView.swift; sourceTree = "<group>"; };
-		E3154EBF1E6048EF00EBD4B0 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedButton.swift; path = CustomViews/RoundedButton.swift; sourceTree = "<group>"; };
-		E3154EC01E6048EF00EBD4B0 /* RoundedFilledButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedFilledButton.swift; path = CustomViews/RoundedFilledButton.swift; sourceTree = "<group>"; };
-		E3154EC11E6048EF00EBD4B0 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedImageView.swift; path = CustomViews/RoundedImageView.swift; sourceTree = "<group>"; };
-		E3154EC21E6048EF00EBD4B0 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundedView.swift; path = CustomViews/RoundedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +88,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E30536E71EA8A22500C5617E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E30536EF1EA8A3D800C5617E /* RoundedBorderView.swift */,
+				E30536F01EA8A3D800C5617E /* RoundedImageView.swift */,
+				E30536F11EA8A3D800C5617E /* RoundedView.swift */,
+			);
+			name = Views;
+			path = CustomViews/Views;
+			sourceTree = "<group>";
+		};
+		E30536E81EA8A23100C5617E /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				E30536E91EA8A3D100C5617E /* RoundedBorderButton.swift */,
+				E30536EA1EA8A3D100C5617E /* RoundedButton.swift */,
+				E30536EB1EA8A3D100C5617E /* RoundedFilledButton.swift */,
+			);
+			name = Buttons;
+			path = CustomViews/Buttons;
+			sourceTree = "<group>";
+		};
 		E3154E581E603C4800EBD4B0 = {
 			isa = PBXGroup;
 			children = (
@@ -164,13 +186,9 @@
 		E3154EBB1E6048C300EBD4B0 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				E30536E81EA8A23100C5617E /* Buttons */,
+				E30536E71EA8A22500C5617E /* Views */,
 				E3154EBC1E6048EF00EBD4B0 /* CollectionViewFlowLayoutLeftAlign.swift */,
-				E3154EBD1E6048EF00EBD4B0 /* RoundedBorderButton.swift */,
-				E3154EBE1E6048EF00EBD4B0 /* RoundedBorderView.swift */,
-				E3154EBF1E6048EF00EBD4B0 /* RoundedButton.swift */,
-				E3154EC01E6048EF00EBD4B0 /* RoundedFilledButton.swift */,
-				E3154EC11E6048EF00EBD4B0 /* RoundedImageView.swift */,
-				E3154EC21E6048EF00EBD4B0 /* RoundedView.swift */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -286,25 +304,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3154EC91E6048EF00EBD4B0 /* RoundedView.swift in Sources */,
+				E30536F41EA8A3D800C5617E /* RoundedView.swift in Sources */,
 				E3154EAC1E60485800EBD4B0 /* UITableView+Scroll.swift in Sources */,
+				E30536EE1EA8A3D100C5617E /* RoundedFilledButton.swift in Sources */,
+				E30536ED1EA8A3D100C5617E /* RoundedButton.swift in Sources */,
 				E3154EAD1E60485800EBD4B0 /* UITableView+Type.swift in Sources */,
 				E3154EBA1E6048C000EBD4B0 /* UserDefaultsManager.swift in Sources */,
+				E30536F21EA8A3D800C5617E /* RoundedBorderView.swift in Sources */,
 				E3154EB91E6048C000EBD4B0 /* InputValidator.swift in Sources */,
 				E3154EB31E60487300EBD4B0 /* ContainerViewShowing.swift in Sources */,
+				E30536F31EA8A3D800C5617E /* RoundedImageView.swift in Sources */,
 				E3154EA81E60485800EBD4B0 /* NSMutableAttributedStringExtension.swift in Sources */,
-				E3154EC71E6048EF00EBD4B0 /* RoundedFilledButton.swift in Sources */,
 				E3154EB51E60487300EBD4B0 /* XibInstantiatable.swift in Sources */,
-				E3154EC81E6048EF00EBD4B0 /* RoundedImageView.swift in Sources */,
 				E3154EAB1E60485800EBD4B0 /* UIImage+Color.swift in Sources */,
 				E3154EAE1E60485800EBD4B0 /* UIView+FillConstraints.swift in Sources */,
 				E3154EC31E6048EF00EBD4B0 /* CollectionViewFlowLayoutLeftAlign.swift in Sources */,
-				E3154EC51E6048EF00EBD4B0 /* RoundedBorderView.swift in Sources */,
-				E3154EC61E6048EF00EBD4B0 /* RoundedButton.swift in Sources */,
 				E3154EA91E60485800EBD4B0 /* UIAlertController+ImageSelection.swift in Sources */,
 				E3154EAA1E60485800EBD4B0 /* UICollectionView+Type.swift in Sources */,
 				E3154EB41E60487300EBD4B0 /* KeyboardNotificationReceiving.swift in Sources */,
-				E3154EC41E6048EF00EBD4B0 /* RoundedBorderButton.swift in Sources */,
+				E30536EC1EA8A3D100C5617E /* RoundedBorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

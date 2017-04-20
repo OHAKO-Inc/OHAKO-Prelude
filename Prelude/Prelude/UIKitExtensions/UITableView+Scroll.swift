@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
 
-    func scrollToBottom(animated: Bool, viewAnimation: Bool = false) {
+    public func scrollToBottom(animated: Bool, viewAnimation: Bool = false) {
         guard numberOfSections > 0 && numberOfRows(inSection: numberOfSections - 1) > 0 else {
             return
         }

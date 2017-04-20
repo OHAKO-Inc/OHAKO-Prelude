@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension UIAlertController {
-    class func showImageSelectAlertController(_ containerVC: UIViewController, imagePicker: UIImagePickerController) {
+public extension UIAlertController {
+    public class func showImageSelectAlertController(_ containerVC: UIViewController, imagePicker: UIImagePickerController) {
 
         let pickerAlert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
 

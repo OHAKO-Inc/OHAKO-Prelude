@@ -8,8 +8,8 @@
 
 import UIKit
 
-@IBDesignable class RoundedButton: UIButton {
-    @IBInspectable var cornerRadius: CGFloat = 2.0 {
+@IBDesignable open class RoundedButton: UIButton {
+    @IBInspectable open var cornerRadius: CGFloat = 2.0 {
         didSet {
             layer.cornerRadius = cornerRadius
             clipsToBounds = cornerRadius > 0.0
