@@ -42,7 +42,7 @@ public extension KeyboardNotificationReceiving {
         UIView.animate(
             withDuration: param.duration,
             delay: 0.0,
-            options: UIViewAnimationOptions(rawValue: UInt(param.curve)),
+            options: UIViewAnimationOptions(rawValue: UInt(truncating: param.curve)),
             animations: {
                 self.animationsWhenKeyboardWillMove(keyboardRect: param.keyboardRect, show: show)
             },
