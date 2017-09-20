@@ -15,8 +15,8 @@ public extension NSMutableAttributedString {
         paragraphStyle.lineSpacing = lineSpacing
         //        self.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: NSRange(location: 0, length: self.length))
         self.addAttributes([
-            NSFontAttributeName: font,
-            NSParagraphStyleAttributeName: paragraphStyle
+            NSAttributedStringKey.font: font,
+            NSAttributedStringKey.paragraphStyle: paragraphStyle
             ], range: NSRange(location: 0, length: self.length))
     }
 
