@@ -10,7 +10,7 @@ import UIKit
 
 public extension UITableView {
     public func registerNibForCellWithType<T: UITableViewCell>(_ type: T.Type) {
-        let nib = UINib(nibName: String(describing: T.self), bundle: nil)
+        let nib = UINib(nibName: String(describing: T.self), bundle: Bundle(for: T.self))
         register(nib, forCellReuseIdentifier: String(describing: T.self))
     }
 
@@ -24,7 +24,7 @@ public extension UITableView {
 
     // header footer view
     public func registerNibForHeaderFooterViewWithType<T: UITableViewHeaderFooterView>(_ type: T.Type) {
-        let nib = UINib(nibName: String(describing: T.self), bundle: nil)
+        let nib = UINib(nibName: String(describing: T.self), bundle: Bundle(for: T.self))
         register(nib, forHeaderFooterViewReuseIdentifier: String(describing: T.self))
     }
 
