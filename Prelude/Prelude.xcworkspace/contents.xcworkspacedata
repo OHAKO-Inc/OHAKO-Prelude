@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PreludePlayground.playground">
+   </FileRef>
+   <FileRef
       location = "container:Prelude.xcodeproj">
    </FileRef>
 </Workspace>
