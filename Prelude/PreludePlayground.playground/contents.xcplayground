@@ -3,5 +3,6 @@
     <pages>
         <page name='Sandbox'/>
         <page name='UIView+FillConstraints'/>
+        <page name='UIImage+Color'/>
     </pages>
 </playground>
