@@ -7,12 +7,11 @@ import XCPlayground
 import PlaygroundSupport
 import Prelude
 
-let textFieldOriginY: CGFloat = 667.0 - 50.0
-let textFieldOriginalFrame = CGRect(x: 0.0, y: textFieldOriginY, width: 375.0, height: 50.0)
+let textFieldOriginalFrame = CGRect(x: 0.0, y: 667.0 - 50.0, width: 375.0, height: 50.0)
 
 class ViewController: UIViewController {
     
-    private lazy var textField: UITextField = {
+    lazy var textField: UITextField = {
         let textField = UITextField(frame: textFieldOriginalFrame)
         textField.borderStyle = .line
         textField.placeholder = "Text Field"
@@ -22,12 +21,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.addSubview(textField)
+        view.backgroundColor = .white
+        view.addSubview(textField)
         let tapGesture = UITapGestureRecognizer(
             target: self,
             action: #selector(ViewController.viewTapped)
         )
-        self.view.addGestureRecognizer(tapGesture)
+        view.addGestureRecognizer(tapGesture)
 
         NotificationCenter.default.addObserver(
             self,
@@ -67,7 +67,6 @@ extension ViewController: KeyboardNotificationReceiving {
 }
 
 let viewController = ViewController()
-viewController.view.backgroundColor = .white
 PlaygroundPage.current.liveView = viewController
 
 //: [Next](@next)
