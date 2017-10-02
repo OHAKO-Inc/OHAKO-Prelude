@@ -9,14 +9,13 @@ import Prelude
 
 class ParentViewController: UIViewController, ContainerViewShowing {
     
-    var containerView: UIView!
-    private var childViewController = ChildViewController()
+    let containerView = UIView(frame: CGRect(x: 50, y: 50, width: 275, height: 567))
+    let childViewController = ChildViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
-        containerView = UIView(frame: CGRect(x: 50, y: 50, width: 275, height: 567))
-        self.view.addSubview(containerView)
+        view.backgroundColor = .white
+        view.addSubview(containerView)
     }
     
     func addSampleChildViewController() {
@@ -29,23 +28,29 @@ class ParentViewController: UIViewController, ContainerViewShowing {
 }
 
 class ChildViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = .gray
-        
+    
+    lazy var label: UILabel = {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 275, height: 567))
         label.textAlignment = .center
         label.textColor = .white
         label.text = "Child View Controller"
-        self.view.addSubview(label)
+        return label
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .gray
+        view.addSubview(label)
     }
 }
 
 let parentViewController = ParentViewController()
 PlaygroundPage.current.liveView = parentViewController
 
+// add
 parentViewController.addSampleChildViewController()
+
+// remove
 //parentViewController.removeSampleChildViewController()
 
 //: [Next](@next)
