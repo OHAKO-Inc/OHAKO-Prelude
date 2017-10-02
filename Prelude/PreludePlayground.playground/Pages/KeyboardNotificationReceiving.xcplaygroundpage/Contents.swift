@@ -1,5 +1,7 @@
 //: [Previous](@previous)
-
+/*:
+ # KeyboardNotificationReceiving
+ */
 import UIKit
 import XCPlayground
 import PlaygroundSupport
@@ -13,6 +15,7 @@ class ViewController: UIViewController {
     private lazy var textField: UITextField = {
         let textField = UITextField(frame: textFieldOriginalFrame)
         textField.borderStyle = .line
+        textField.placeholder = "Text Field"
         return textField
     }()
 
@@ -20,7 +23,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         self.view.addSubview(textField)
-        
+        let tapGesture = UITapGestureRecognizer(
+            target: self,
+            action: #selector(ViewController.viewTapped)
+        )
+        self.view.addGestureRecognizer(tapGesture)
+
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(ViewController.keyboardWillShow(_:)),
@@ -33,28 +41,22 @@ class ViewController: UIViewController {
             name: .UIKeyboardWillHide,
             object: nil
         )
-        
-        let tapGesture = UITapGestureRecognizer(
-            target: self,
-            action: #selector(ViewController.viewTapped)
-        )
-        self.view.addGestureRecognizer(tapGesture)
     }
     
+    @objc func viewTapped() {
+        view.endEditing(true)
+    }
     @objc func keyboardWillShow(_ notification: Notification) {
         handleKeyboardWillShow(notification)
     }
     @objc func keyboardWillHide(_ notification: Notification) {
         handleKeyboardWillHide(notification)
     }
-    
-    @objc func viewTapped() {
-        view.endEditing(true)
-    }
 }
 
 extension ViewController: KeyboardNotificationReceiving {
     func animationsWhenKeyboardWillMove(keyboardRect: CGRect, show: Bool) {
+        // add custom animation here
         textField.frame = CGRect(
             x: textFieldOriginalFrame.origin.x,
             y: textFieldOriginalFrame.origin.y - (show ? keyboardRect.size.height : 0),
