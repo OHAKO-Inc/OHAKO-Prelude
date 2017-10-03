@@ -1,14 +1,15 @@
 # OHAKO-Prelude
-A collection of useful Swift tools that are used in tagmatch app
-This repository is used in cure app
+A collection of useful Swift tools.
 
-## 注意
-以前は Tagmatch-Preludeというリポジトリ名でしたが、OHAKO-Preludeに変更しました。
+## Getting started
 
-## 除外
-- DatePickerViewPresentable & DatePickerView
-  - ReactiveSwift依存のため
+#### Carthage
 
-- PagerController
-  - 別frameworkとして切り出し
-  
+If you use [Carthage][] to manage your dependencies, simply add
+Prelude to your `Cartfile`:
+
+```
+github "OHAKO-Inc/OHAKO-Prelude"
+```
+
+If you use Carthage to build your dependencies, make sure you have added `Prelude.framework` to the "_Linked Frameworks and Libraries_" section of your target, and have included them in your Carthage framework copying build phase.  
