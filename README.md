@@ -5,7 +5,7 @@ A collection of useful Swift tools.
 
 #### Carthage
 
-If you use [Carthage][] to manage your dependencies, simply add
+If you use Carthage to manage your dependencies, simply add
 Prelude to your `Cartfile`:
 
 ```
