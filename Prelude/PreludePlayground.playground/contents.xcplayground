@@ -6,5 +6,7 @@
         <page name='UIImage+Color'/>
         <page name='ContainerViewShowing'/>
         <page name='KeyboardNotificationReceiving'/>
+        <page name='UITableView+Scroll'/>
+        <page name='NSMutableAttributedStringExtension'/>
     </pages>
 </playground>
