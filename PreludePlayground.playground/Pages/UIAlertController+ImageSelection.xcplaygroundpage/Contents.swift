@@ -33,7 +33,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        guard let _ = info[UIImagePickerControllerEditedImage] as? UIImage  else {
+        guard info[UIImagePickerControllerEditedImage] != nil else {
             return
         }
         // use image

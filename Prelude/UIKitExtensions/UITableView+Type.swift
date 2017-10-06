@@ -18,8 +18,12 @@ public extension UITableView {
         register(type, forCellReuseIdentifier: String(describing: type))
     }
 
-    public func dequeueReusableCellWithType<T: UITableViewCell>(_ type: T.Type, forIndexPath indexPath: IndexPath) -> T {
-        return dequeueReusableCell(withIdentifier: String(describing: type), for: indexPath) as! T // swiftlint:disable:this force_cast
+    public func dequeueReusableCellWithType<T: UITableViewCell>(
+        _ type: T.Type,
+        forIndexPath indexPath: IndexPath
+    ) -> T {
+        // swiftlint:disable:next force_cast
+        return dequeueReusableCell(withIdentifier: String(describing: type), for: indexPath) as! T
     }
 
     // header footer view
