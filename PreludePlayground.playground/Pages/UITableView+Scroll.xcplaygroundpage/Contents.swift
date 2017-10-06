@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.tableView = UITableView(frame: view.frame)
         self.tableView.delegate = self
         self.tableView.dataSource = self

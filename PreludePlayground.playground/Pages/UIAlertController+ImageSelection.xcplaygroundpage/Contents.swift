@@ -8,21 +8,21 @@ import PlaygroundSupport
 import Prelude
 
 class ViewController: UIViewController {
-    
+
     lazy var button: UIButton = {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 375, height: 667))
         button.setTitle("ImageSelection", for: .normal)
         button.setTitleColor(.black, for: .normal)
         return button
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         view.addSubview(button)
         button.addTarget(self, action: #selector(ViewController.imageSelectionButtonTapped(_:)), for: .touchUpInside)
     }
-    
+
     @objc func imageSelectionButtonTapped(_ sender: Any) {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
@@ -39,7 +39,7 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         // use image
         picker.dismiss(animated: true, completion: nil)
     }
-    
+
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }

@@ -19,7 +19,7 @@ public extension ContainerViewShowing where Self: UIViewController {
         containerView.addFilledSubview(childViewController.view)
         childViewController.didMove(toParentViewController: self)
     }
-    
+
     public func removeChildViewController(_ childViewController: UIViewController) {
         childViewController.willMove(toParentViewController: nil)
         childViewController.view.removeFromSuperview()

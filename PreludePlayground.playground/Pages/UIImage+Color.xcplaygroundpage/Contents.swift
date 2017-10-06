@@ -27,4 +27,3 @@ let imageView = UIImageView(
 imageView.image = image
 
 viewController.view.addSubview(imageView)
-
