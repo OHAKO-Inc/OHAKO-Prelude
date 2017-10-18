@@ -56,7 +56,7 @@ public extension KeyboardNotificationReceiving {
 }
 
 struct KeyboardAnimateParams {
-    let keyboardRect: CGRect!
-    let duration: TimeInterval!
-    let curve: NSNumber!
+    let keyboardRect: CGRect
+    let duration: TimeInterval
+    let curve: NSNumber
 }
