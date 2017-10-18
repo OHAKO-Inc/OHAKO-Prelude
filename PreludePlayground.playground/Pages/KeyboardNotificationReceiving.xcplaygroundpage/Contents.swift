@@ -10,7 +10,7 @@ import Prelude
 let textFieldOriginalFrame = CGRect(x: 0.0, y: 667.0 - 50.0, width: 375.0, height: 50.0)
 
 class ViewController: UIViewController {
-    
+
     lazy var textField: UITextField = {
         let textField = UITextField(frame: textFieldOriginalFrame)
         textField.borderStyle = .line
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             object: nil
         )
     }
-    
+
     @objc func viewTapped() {
         view.endEditing(true)
     }
